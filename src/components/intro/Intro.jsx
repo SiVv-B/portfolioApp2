@@ -23,7 +23,7 @@ export default function Intro() {
         <div className="imgContainer">
           <div className="photoBackground">
                <ReactPlayer
-              url={introBackground}
+                url={introBackground}  
               controls
               playing
               muted
@@ -38,7 +38,7 @@ export default function Intro() {
               height="100%"
             /> */}
           </div>
-          <img src="img/webDeveloper.png" alt="web developer" />
+         <img src="img/webDeveloper.png" alt="web developer" /> 
         </div>
       </div>
       <div className="right">
@@ -51,9 +51,9 @@ export default function Intro() {
             Developer
           </h2>
         </div>
-        <a href="#projects">
+{/*         <a href="/projects">
           <img src="img/down.png" alt="" />
-        </a>
+        </a> */}
       </div>
     </div>
   )

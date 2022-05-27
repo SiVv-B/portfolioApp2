@@ -28,32 +28,28 @@ const Contact = () => {
   }
 
   return (
-    <div className="c" id="contact">
-      <div className="c-bg"></div>
+    <div className="c" id="contact">   
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Hire me and let's discuss projects</h1>
+          <h1 className="c-title">Contact me <br/>and let's stay in touch!</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src="img/phone.png" alt="" className="c-icon" />
-              +33 06 12 34 56
+              You can ask my phone number by email. 
             </div>
             <div className="c-info-item">
               <img className="c-icon" src="img/email.png" alt="" />
-              contact@siwar.com
+              siwar.blk@gmail.com
             </div>
             <div className="c-info-item">
               <img className="c-icon" src="img/address.png" alt="" />
-              12 rue lamda, 8520 France
+              Grenoble, 38100 France
             </div>
           </div>
         </div>
+
         <div className="c-right">
-          <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
-          </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
+          <form  ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="user_name" />
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />

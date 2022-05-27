@@ -7,12 +7,12 @@
         top: 70px;
         //scroll every 100vh
         scroll-snap-type: y mandatory;
-         //hide scroll bar for firefox
+   /*       //hide scroll bar for firefox
         scrollbar-width: none;
         //hide scrollbar for other browsers
         &::-webkit-scrollbar{
             display: none;
-        }
+        } */
 
         //once clicked on logo, scroll to the top smoothly
         //instead of go back to the top instantelly

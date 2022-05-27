@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .intro {
-  background-color:rgba(49, 0, 23, 0.986);
+  background-color: rgba(49, 0, 23, 0.986);
   display: flex;
 
   @include mobile {
@@ -9,32 +9,40 @@
     align-items: center;
   }
 
-  .introBackground {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    float: right;
-    object-fit:fill;
-  }
-
   .left {
     flex: 0.7;
     overflow: hidden;
     z-index: 2;
+    
+
+    .photoBackground {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      float: right;
+         object-fit: cover;
+        margin-left: 35%;
+       
+    }
 
     .imgContainer {
       width: 950px;
-      height: 750px;
-      background-color:rgba(49, 0, 23, 0.986);
+      height: 647px;
+      background-color: rgba(27, 0, 0, 0.986);
       border-radius: 5%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
       position: relative;
-      z-index: 2;
+      z-index: -1;
       margin-left: 5%;
-
+      // to hide scrollbar
+  scrollbar-width: none;
+  // to hide scrollbar for other browsers
+  &::-webkit-scrollbar {
+    display: none;
+  } 
 
       @include mobile {
         align-items: flex-start;
@@ -49,14 +57,7 @@
         }
       }
 
-      .photoBackground {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        float: right;
-        object-fit: cover;
-        margin-left: 35%;
-      }
+     
     }
   }
   .right {
