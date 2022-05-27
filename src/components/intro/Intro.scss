@@ -10,19 +10,15 @@
   }
 
   .left {
-    flex: 0.7;
+    flex: 0.9;
     overflow: hidden;
     z-index: 2;
-    
 
-    .photoBackground {
+    .videoBackground {
       position: absolute;
-      z-index: 2;
+      z-index: -1;
       top: 0;
-      float: right;
-         object-fit: cover;
-        margin-left: 35%;
-       
+      margin-left: 25%;
     }
 
     .imgContainer {
@@ -35,14 +31,13 @@
       justify-content: center;
       float: right;
       position: relative;
-      z-index: -1;
-      margin-left: 5%;
+      z-index: 1;
       // to hide scrollbar
-  scrollbar-width: none;
-  // to hide scrollbar for other browsers
-  &::-webkit-scrollbar {
-    display: none;
-  } 
+      scrollbar-width: none;
+      // to hide scrollbar for other browsers
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       @include mobile {
         align-items: flex-start;
@@ -56,8 +51,6 @@
           height: 50%;
         }
       }
-
-     
     }
   }
   .right {
@@ -68,8 +61,8 @@
     .wrapper {
       width: 100%;
       height: 90%;
-      margin-top: 10%;
-      margin-left: 5%;
+      margin-top: 5%;
+      margin-left: -5%;
       padding-left: 50px;
       display: flex;
       flex-direction: column;
@@ -82,7 +75,7 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 70px;
         margin: 10px 0;
 
         @include mobile {
@@ -90,10 +83,14 @@
         }
       }
       h2 {
-        font-size: 35px;
+        font-size: 45px;
+      }
+      h4 {
+        margin-top: 15%;
+        font-size: 25px;
       }
       h3 {
-        font-size: 30px;
+        font-size: 40px;
         color: rgba(226, 173, 192, 0.685);
 
         @include mobile {
@@ -104,11 +101,9 @@
           font-size: inherit;
           color: rgba(245, 209, 222, 0.966);
         }
-
         .ityped-cursor {
           animation: blink 1s infinite;
         }
-
         @keyframes blink {
           50% {
             opacity: 1;
@@ -119,13 +114,15 @@
         }
       }
     }
+
+            //css for the arrow
     a {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
       left: 40%;
 
       img {
-        width: 40px;
+        width: 50px;
         animation: arrowBlink 4s infinite;
       }
       @keyframes arrowBlink {

@@ -18,27 +18,21 @@ export default function Intro() {
   }, [])
 
   return (
-    <div className="intro" id="intro">
+    <div className="intro">
       <div className="left">
         <div className="imgContainer">
-          <div className="photoBackground">
-               <ReactPlayer
-                url={introBackground}  
+          <div className="videoBackground">
+            <ReactPlayer
+              url={introBackground}
               controls
               playing
               muted
               loop
               height="100vh"
               width="100vw"
-            /> 
-{/*             <img
-              src={introBackground}
-              alt="web developer"
-              width="200%"
-              height="100%"
-            /> */}
+            />
           </div>
-         <img src="img/webDeveloper.png" alt="web developer" /> 
+          <img src="img/webDeveloper.png" alt="web developer" />
         </div>
       </div>
       <div className="right">
@@ -51,9 +45,10 @@ export default function Intro() {
             Developer
           </h2>
         </div>
-{/*         <a href="/projects">
+
+        <a href="/projects">
           <img src="img/down.png" alt="" />
-        </a> */}
+        </a>
       </div>
     </div>
   )

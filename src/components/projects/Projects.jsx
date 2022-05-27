@@ -33,6 +33,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      
       <div className="showmore">
         <button
           onClick={handleShowMore}

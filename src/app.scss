@@ -2,8 +2,8 @@
     height: 100vh;
     .sections{
         width: 100%;
-        height: calc(100vh - 70px);
-        position: relative;
+         height: calc(100vh - 70px); 
+              position: relative;
         top: 70px;
         //scroll every 100vh
         scroll-snap-type: y mandatory;
